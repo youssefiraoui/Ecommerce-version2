@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addcommandTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Definir details de votre commande:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addcommandTextview"
+        android:layout_alignStart="@+id/addcommandTextview"
+        android:layout_below="@+id/addcommandTextview"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/livreur" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:ems="10"
+            android:hint="Votre nom complet"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="27dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/date" />
+
+        <EditText
+            android:id="@+id/datecommandeEdittext"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:ems="10"
+            android:hint="Entrez la date de commande"
+            android:inputType="date"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gps" />
+
+        <EditText
+            android:id="@+id/adresseEdittext"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:ems="10"
+            android:hint="Entrez votre adresse"
+            android:inputType="textPostalAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout4"
+        android:layout_alignStart="@+id/linearLayout4"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout5">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/commandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tellayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Commander"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/commandButton"
+        android:layout_alignLeft="@+id/linearLayout5"
+        android:layout_alignStart="@+id/linearLayout5"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout6">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout5"
+        android:layout_toEndOf="@+id/linearLayout5"
+        android:layout_toRightOf="@+id/linearLayout5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/tel" />
+
+        <EditText
+            android:id="@+id/tellivraison"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:ems="10"
+            android:hint="Entrez votre telephone"
+            android:inputType="phone" />
+    </LinearLayout>
+</RelativeLayout>

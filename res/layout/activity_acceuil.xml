@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.youssefiraoui.ecommercev2.controlers.Acceuil">
+
+    <Button
+        android:id="@+id/buttonComsultercommande"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="?attr/actionModeSplitBackground"
+        android:onClick="consulter"
+        android:text="Consulter vos commandes"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/buttonConsultercatalogue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/actionModeSplitBackground"
+        android:onClick="consulter2"
+        android:text="Consulter votre catalogue"
+        android:textColor="@android:color/background_light" />
+
+</LinearLayout>

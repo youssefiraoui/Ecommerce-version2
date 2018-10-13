@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/commandeNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="Commande N:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dateitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/commandeNum"
+        android:layout_alignStart="@+id/commandeNum"
+        android:layout_below="@+id/commandeNum"
+        android:layout_marginTop="21dp"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        tools:text="Date de commande" />
+
+    <ImageView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/telliv"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_toStartOf="@+id/delete"
+        app:srcCompat="@drawable/update" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/update"
+        app:srcCompat="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/telliv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateitem"
+        android:layout_alignStart="@+id/dateitem"
+        android:layout_below="@+id/dateitem"
+        android:layout_marginTop="21dp"
+        android:text="Telephone"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/addliv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/telliv"
+        android:layout_alignStart="@+id/telliv"
+        android:layout_below="@+id/update"
+        android:layout_marginTop="20dp"
+        android:text="Adresse de livraison"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:id="@+id/nameproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/productImage"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/productImage"
+        android:layout_toRightOf="@+id/productImage"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/priceproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameproduct"
+        android:layout_alignStart="@+id/nameproduct"
+        android:layout_below="@+id/nameproduct"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/productImage"
+        android:layout_alignStart="@+id/productImage"
+        android:layout_below="@+id/productImage"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/productImage"
+        android:layout_alignRight="@+id/productImage"
+        android:layout_alignTop="@+id/add"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        tools:text="0" />
+
+    <ImageView
+        android:id="@+id/del"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/addpanel"
+        android:layout_toEndOf="@+id/addpanel"
+        android:layout_toRightOf="@+id/addpanel"
+        app:srcCompat="@drawable/del" />
+
+    <Button
+        android:id="@+id/addpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/add"
+        android:layout_toRightOf="@+id/add"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Ajouter"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/productImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/productImage"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="Ajoutez au panier :"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

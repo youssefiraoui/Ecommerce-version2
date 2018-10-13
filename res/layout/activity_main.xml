@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youssefiraoui.ecommercev2.controlers.MainActivity"
+    android:background="#fff">
+
+
+    <TextView
+        android:id="@+id/signIntextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:text="@string/veuillez_saisir_vos_coordonn_es"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signIntextview"
+        android:layout_alignStart="@+id/signIntextview"
+        android:layout_below="@+id/signIntextview"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/loginimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/login" />
+
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:ems="10"
+            android:hint="Entrez votre login"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear1"
+        android:layout_alignStart="@+id/linear1"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/passwordimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:ems="10"
+            android:hint="Entrez votre mot de passe"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear2"
+        android:layout_alignStart="@+id/linear2"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/actionModeSplitBackground"
+            android:onClick="connect"
+            android:text="Se connecter"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/inscriptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/actionModeSplitBackground"
+            android:onClick="inscription"
+            android:text="S'inscrire"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

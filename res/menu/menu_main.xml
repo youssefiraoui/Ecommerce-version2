@@ -1,0 +1,14 @@
+<menu xmlns:androclass="http://schemas.android.com/apk/res/android" >
+    <item  androclass:id="@+id/item1"
+        androclass:title="Acceuil"/>
+
+    <item  androclass:id="@+id/item2"
+        androclass:title="Panier"/>
+
+    <item  androclass:id="@+id/item3"
+        androclass:title="Consulter mon catalogue"/>
+
+    <item  androclass:id="@+id/item4"
+        androclass:title="Consulter mes commandes"/>
+
+</menu>
